@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #1a1423, #120f18); /* Fundo roxo escuro suave */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(43, 34, 54, 0.95); /* Fundo roxo escuro translúcido */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #c8bce6; /* Roxo claro */
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #7a5ca8, #5f4787); /* Degradê roxo escuro */
+    color: white;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #5f4787, #4a366d);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(122, 92, 168, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+#mensagem {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #eae6f5; /* Texto claro */
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    #mensagem {
+        font-size: 1.2em;
+    }
+}
